@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
+import Experience from "./Pages/Experience";
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               <Routes>
                 <Route index path="/" element={<Home />} />
                 {/* <Route path="profile" element={<Profile />} /> */}
+                <Route path="/experience" element={<Experience />} />
               </Routes>
             </>
           }

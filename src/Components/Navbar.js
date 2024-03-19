@@ -23,16 +23,19 @@ class Navbar extends Component {
                 </div>
                 <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
                     <li>
-                        <NavLink className={'nav-links'} exact to="/">Home</NavLink>
+                        <NavLink className={'nav-links'} exact to="/" onClick={this.handleClick}>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink className={'nav-links'} to="/about">About</NavLink>
+                        <NavLink className={'nav-links'} to="/about" onClick={this.handleClick}>About</NavLink>
                     </li>
                     <li>
-                        <NavLink className={'nav-links'} to="/projects">Projects</NavLink>
+                        <NavLink className={'nav-links'} to="/experience" onClick={this.handleClick}>Experience</NavLink>
                     </li>
                     <li>
-                        <NavLink className={'nav-links'} to="/contact">Contact</NavLink>
+                        <NavLink className={'nav-links'} to="/projects" onClick={this.handleClick}>Projects</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className={'nav-links'} to="/contact" onClick={this.handleClick}>Contact</NavLink>
                     </li>
                 </ul>
             </nav>
