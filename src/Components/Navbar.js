@@ -1,17 +1,43 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import './NavbarStyles.css';
+import logo from '../Pages/Images/h-logo/png/logo-no-background.png';
 
-const Navbar = () => {
-    return (
-        <nav>
-            <ul>
-                <li><NavLink exact to="/">Home</NavLink></li>
-                <li><NavLink to="/about">About</NavLink></li>
-                <li><NavLink to="/projects">Projects</NavLink></li>
-                <li><NavLink to="/contact">Contact</NavLink></li>
-            </ul>
-        </nav>
-    );
+class Navbar extends Component {
+    state = { clicked: false }
+
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked })
+    }
+
+    render() {
+        return (
+            <nav className='NavbarItems'>
+                <NavLink to='/'>
+                    <img src={logo} alt='logo' className='logo' />
+                </NavLink>
+                <div className='menu-icon' onClick={this.handleClick}>
+                    <i className={
+                        this.state.clicked ? 
+                        "fas fa-times" : "fas fa-bars"}></i>
+                </div>
+                <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+                    <li>
+                        <NavLink className={'nav-links'} exact to="/">Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className={'nav-links'} to="/about">About</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className={'nav-links'} to="/projects">Projects</NavLink>
+                    </li>
+                    <li>
+                        <NavLink className={'nav-links'} to="/contact">Contact</NavLink>
+                    </li>
+                </ul>
+            </nav>
+        );
+    }
 }
 
 export default Navbar;

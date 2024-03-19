@@ -1,12 +1,14 @@
 import React from 'react';
+import './HomeStyles.css';
 
 function Home() {
     return (
-        <div>
-            <h1>Welcome to my Developer Portfolio</h1>
-            <h2>Hi, I'm Hunter Crandall</h2>
-            <p>I am a passionate developer with expertise in web development.</p>
-            <p>Feel free to explore my projects and get in touch with me.</p>
+        <div className='home'>
+            <div className='home-text'>
+                <h3>Hello, my name is</h3>
+                <h1>Hunter Crandall.</h1>
+                <h2>I'm a full stack web developer.</h2>
+            </div>
         </div>
     );
 }
