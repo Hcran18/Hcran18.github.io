@@ -3,21 +3,35 @@ import JobCard from '../Components/JobCard';
 import './ExperienceStyles.css';
 
 function Experience() {
+    const webDescription = [
+        'Maintain multiple websites for 8 departments in the College of Fine Arts and Communications',
+        'Develop multiple websites to meet semesterly project deadlines',
+        'Design solutions as a team in weekly meetings to assist departments with their website requests',
+        'Monitor and report monthly analytics using Google Analytics for the college dean'
+    ];
+
+    const pathwayDescription = [ 
+        'Supervised multiple 8-10 person teams of customer service representatives',
+        'Assisted unsatisfied students by fixing issues that had not yet been resolved',
+        'Conducted weekly trainings to instruct team members',
+        'Approved and managed employee time-off requests and pay'
+    ];
+
     return (
         <div className='experience'>
             <h1>Jobs I've Had</h1>
             <div className='jobs'>
                 <JobCard className='job-card'
                     title='Lead Web Developer'
+                    dates='August 2023 - Present'
                     company='Brigham Young University'
-                    location='Provo, UT'
-                    description='I led a team of developers to create a website for the college.'
+                    descriptions={webDescription}
                 />
                 <JobCard className='job-card'
-                    title='Team Lead'
+                    title='Support Team Lead'
+                    dates= 'July 2021 - August 2023'
                     company='BYU Pathway Worldwide'
-                    location='Salt Lake City, UT'
-                    description='I led a team of customer service representatives to help and assist students.'
+                    descriptions={pathwayDescription}
                 />
             </div>
         </div>
