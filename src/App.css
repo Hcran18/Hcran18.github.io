@@ -5,8 +5,16 @@
   font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }
 
+html {
+  height: 80%;
+  background: rgb(34, 34, 34);
+  background: linear-gradient(315deg, rgba(34, 34, 34, 1) 2%, rgba(106, 106, 106, 1) 90%);
+  background-attachment: fixed;
+}
+
 body {
-  background-color: #6a6a6a;
+  margin: 0;
+  height: 80%;
 }
 
 .App {

@@ -4,17 +4,16 @@
     margin-top: 20px;
     margin-bottom: 20px;
     transition: all 0.15s ease-in-out;
-}
-
-.job-card:hover {
+    background-color: transparent; /* Set initial background color */
+    box-shadow: none; /* Set initial box shadow */
+    transform: none; /* Set initial transform */
+  }
+  
+  .job-card.scrolled {
     background-color: #00dfb3;
-    box-shadow: 0 5px 15px 0 rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
     transform: translate(-5px, -5px);
-
-    .descriptions li::before {
-        border-left-color: #222;
-    }
-}
+  }
 
 .title {
     font-size: 5vw;
