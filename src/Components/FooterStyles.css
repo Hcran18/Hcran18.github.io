@@ -1,0 +1,37 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.credit {
+    font-size: 15px;
+    color: #fff;
+    padding: 10px;
+}
+
+.socials {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.social {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 10px;
+    transition: all 0.15s ease-in-out;
+}
+
+.social:hover {
+    color: #00dfb3;
+    transform: translate(-1px, -5px);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+}
