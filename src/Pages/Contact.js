@@ -1,49 +1,67 @@
 import React, { useState } from 'react';
 import './ContactStyles.css';
+import '../Components/Button.js';
+import '../Components/ButtonStyles.css';
 
 const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
     const handleSubmit = (e) => {
+        console.log("Handling submit...");
         e.preventDefault();
-        // Add your logic to handle form submission here
-        // You can use the values of name, email, and message state variables
+        console.log(name, email, message);
+
+        setShowSuccessMessage(true);
+
+        setName('');
+        setEmail('');
+        setMessage('');
+
+        setTimeout(() => {
+            setShowSuccessMessage(false);
+        }, 5000);
     };
 
     return (
         <div className='ContactPage'>
-            <h1>Contact</h1>
-            <div className='Socials'>
-                <h2>Socials</h2>
-                {/* Add your social media links here */}
-            </div>
-            <div className='FormSection'>
-                <h2>Contact Form</h2>
-                <form className='form' onSubmit={handleSubmit}>
-                    <label htmlFor="name">Name:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                    />
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
-                    <label htmlFor="message">Message:</label>
-                    <textarea
-                        id="message"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                    ></textarea>
-                    <button type="submit">Submit</button>
-                </form>
+            <h1>Get in Touch</h1>
+            <div className='ContactInfo'>
+                <div className='FormSection'>
+                    <h2>Let Me Know How I Can Help You!</h2>
+                    {showSuccessMessage && <div className='success-message'>Form submitted successfully!</div>}
+                    <form className='form' onSubmit={handleSubmit}>
+                        <div className='form-group'>
+                            <label htmlFor="name">Name:</label>
+                            <input
+                                type="text"
+                                id="name"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                            />
+                        </div>
+                        <div className='form-group'>
+                            <label htmlFor="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                        </div>
+                        <div className='form-group'>
+                            <label htmlFor="message">Message:</label>
+                            <textarea
+                                id="message"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                            />
+                        </div>
+                        <button className='button' type='submit'>Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     );

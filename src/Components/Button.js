@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 import './ButtonStyles.css';
 
-const Button = ({ text, onClick, to }) => {
+const Button = ({ text, onClick, to, type }) => {
     return (
         <NavLink to={to}>
-            <button className='button' onClick={onClick}>
+            <button type={type} className='button' onClick={onClick}>
                 {text}
             </button>
         </NavLink>

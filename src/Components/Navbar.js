@@ -23,7 +23,7 @@ class Navbar extends Component {
                 </div>
                 <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
                     <li>
-                        <NavLink className={'nav-links'} exact to="/" onClick={this.handleClick}>Home</NavLink>
+                        <NavLink className={'nav-links'} exact="true" to="/" onClick={this.handleClick}>Home</NavLink>
                     </li>
                     <li>
                         <NavLink className={'nav-links'} to="/about" onClick={this.handleClick}>About</NavLink>

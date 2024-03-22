@@ -3,7 +3,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.ContactPage h1 {
+    font-size: 6vw;
+    font-weight: bold;
+    color: #00dfb3;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ContactPage h2 {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ContactInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .FormSection {
@@ -19,5 +46,45 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 80%; /* Adjust width to your preference */
+    max-width: 500px; /* Set a maximum width for better responsiveness */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
     width: 100%;
+    color: #fff;
+}
+
+.form-group label {
+    width: 100%; /* Use full width for labels */
+    text-align: left;
+    margin-bottom: 2px; /* Add space between label and input */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Use full width for inputs and textareas */
+    padding: 8px; /* Adjust padding for better appearance */
+    border-color: #00dfb3;
+    border-width: 2px;
+    color: #fff;
+    background-color: transparent;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+button[type="submit"] {
+    margin-top: 30px; /* Add some space above the submit button */
+    margin-bottom: 30px;
+}
+
+.success-message {
+    color: #00dfb3;
+    margin-top: 10px;
 }
