@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './ContactStyles.css';
 import '../Components/Button.js';
 import '../Components/ButtonStyles.css';
 
 const Contact = () => {
+    const form = useRef();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -13,8 +15,20 @@ const Contact = () => {
         console.log("Handling submit...");
         e.preventDefault();
         console.log(name, email, message);
-
-        setShowSuccessMessage(true);
+        
+        emailjs
+        .sendForm('service_c0gt18o', 'template_ppga4pj', form.current, {
+            publicKey: 'mYPaIVchKPCnsihfc',
+        })
+        .then(
+            () => {
+            console.log('SUCCESS!');
+            setShowSuccessMessage(true);
+            },
+            (error) => {
+            console.log('FAILED...', error.text);
+            },
+        );
 
         setName('');
         setEmail('');
@@ -32,7 +46,7 @@ const Contact = () => {
                 <div className='FormSection'>
                     <h2>Let Me Know How I Can Help You!</h2>
                     {showSuccessMessage && <div className='success-message'>Form submitted successfully!</div>}
-                    <form className='form' onSubmit={handleSubmit}>
+                    <form ref={form} className='form' onSubmit={handleSubmit}>
                         <div className='form-group'>
                             <label htmlFor="name">Name:</label>
                             <input
@@ -40,6 +54,7 @@ const Contact = () => {
                                 id="name"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
+                                name='user_name'
                             />
                         </div>
                         <div className='form-group'>
@@ -49,6 +64,7 @@ const Contact = () => {
                                 id="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
+                                name='user_email'
                             />
                         </div>
                         <div className='form-group'>
@@ -57,6 +73,7 @@ const Contact = () => {
                                 id="message"
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
+                                name='message'
                             />
                         </div>
                         <button className='button' type='submit'>Submit</button>
