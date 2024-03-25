@@ -61,6 +61,18 @@
     height: 35px;
 }
 
+.contact {
+    color: #00dfb3;
+    background-color: #222;
+    border: 2px solid #00dfb3;
+}
+
+@media screen and (min-width: 850px) {
+    .contact {
+        border-radius: 8px;
+    }
+}
+
 @media screen and (max-width: 850px) {
     .NavbarItems {
         z-index: 99;
