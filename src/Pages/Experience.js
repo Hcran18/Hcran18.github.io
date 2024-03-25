@@ -1,5 +1,6 @@
 import React from 'react';
 import JobCard from '../Components/JobCard';
+import { motion } from 'framer-motion';
 import './ExperienceStyles.css';
 
 function Experience() {
@@ -19,20 +20,39 @@ function Experience() {
 
     return (
         <div className='experience'>
-            <h1>Jobs I've Had</h1>
+            <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            >
+                <h1>Experience</h1>
+            </motion.div>
+
             <div className='jobs'>
-                <JobCard className='job-card'
-                    title='Lead Web Developer'
-                    dates='August 2023 - Present'
-                    company='Brigham Young University'
-                    descriptions={webDescription}
-                />
-                <JobCard className='job-card'
-                    title='Support Team Lead'
-                    dates= 'July 2021 - August 2023'
-                    company='BYU Pathway Worldwide'
-                    descriptions={pathwayDescription}
-                />
+                <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.3 }}
+                >
+                    <JobCard className='job-card'
+                        title='Lead Web Developer'
+                        dates='August 2023 - Present'
+                        company='Brigham Young University'
+                        descriptions={webDescription}
+                    />
+                </motion.div>
+                <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.6 }}
+                >
+                    <JobCard className='job-card'
+                        title='Support Team Lead'
+                        dates= 'July 2021 - August 2023'
+                        company='BYU Pathway Worldwide'
+                        descriptions={pathwayDescription}
+                    />
+                </motion.div>
             </div>
         </div>
     );

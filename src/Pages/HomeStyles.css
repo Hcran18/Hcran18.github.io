@@ -43,6 +43,13 @@
     color: #00dfb3;
 }
 
+.home-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
 @media screen and (min-width: 1001px){
     .main:hover {
         background-color: #00dfb3;

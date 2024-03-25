@@ -8,6 +8,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import Experience from "./Pages/Experience";
+import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import './App.css';
 
@@ -22,8 +23,8 @@ function App() {
               <Navbar />
               <Routes className='Pages'>
                 <Route index path="/" element={<Home />} />
-                {/* <Route path="profile" element={<Profile />} /> */}
                 <Route path="/experience" element={<Experience />} />
+                <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
               </Routes>
               <Footer className='footer' />

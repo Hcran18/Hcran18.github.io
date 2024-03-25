@@ -11,14 +11,14 @@
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
-    transition: all 0.15s ease-in-out;
+    /* transition: all 0.15s ease-in-out; */
 }
 
 .button:hover {
     background-color: #00dfb3;
     color: #222;
-    box-shadow: 0 5px 15px 0 rgba( 0, 0, 0, 0.25 );
-    transform: translate(-5px, -5px);
+    /* box-shadow: 0 5px 15px 0 rgba( 0, 0, 0, 0.25 ); */
+    /* transform: translate(-5px, -5px); */
 }
 
 @media screen and (max-width: 850px) {
