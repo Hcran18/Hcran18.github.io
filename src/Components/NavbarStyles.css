@@ -68,6 +68,11 @@
 }
 
 @media screen and (min-width: 850px) {
+    .card-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
     .contact {
         border-radius: 8px;
     }

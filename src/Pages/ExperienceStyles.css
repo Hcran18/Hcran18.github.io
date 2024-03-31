@@ -1,6 +1,5 @@
 .experience {
     width: 100%;
-    min-height: 100vh;
     margin-top: 120px;
     display: flex;
     flex-direction: column;
@@ -15,7 +14,3 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-.jobs {
-    flex: 1; /* Allow the jobs section to take up remaining vertical space */
-  }

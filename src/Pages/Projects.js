@@ -1,55 +1,79 @@
 import React, { useState } from 'react';
+import ProjectCard from '../Components/ProjectCard';
 import { motion, AnimatePresence } from 'framer-motion';
+import ExpandedProjectCard from '../Components/ExpandedProjectCard';
+import huntercrandallcom from './Images/projects/huntercrandall.com.png'
+import dinnerdate from './Images/projects/DinnerDate.png';
+import tweeter from './Images/projects/tweeter.png';
 
 import './ProjectsStyles.css';
 
 const Projects = () => {
-  const [selectedId, setSelectedId] = useState(null);
+        const [selectedID, setSelectedID] = useState(null);
+
+        const handleClose = () => {
+                setSelectedID(null);
+        };
 
   // Define the items array containing project data
-const items = [
-    { id: 1, title: 'Project 1', subtitle: 'Subtitle 1', short: 'Short Description 1', description: 'Description 1'},
-    { id: 2, title: 'Project 2', subtitle: 'Subtitle 2', short: 'Short Description 2', description: 'Description 2'},
-    { id: 3, title: 'Project 3', subtitle: 'Subtitle 3', short: 'Short Description 2', description: 'Description 3'},
-    // Add more projects as needed
-];
+        const items = [
+        { id: 1, 
+                title: 'huntercrandall.com', 
+                subtitle: 'Portfolio Website', 
+                short: 'My personal portfolio website showcasing my projects and experience.', 
+                description: 'My personal portfolio website showcasing my projects and experience. I wanted to create a website that was simple, clean, and easy to navigate. I also used EmailJS to create a contact form that allows users to send me messages directly from the website.',
+                tech: 'React, Framer Motion, EmailJS',
+                github: 'https://github.com/Hcran18/Hcran18.github.io',
+                image: huntercrandallcom
+        },
+        { id: 2, 
+                title: 'Dinner Date', 
+                subtitle: 'Current Project', 
+                short: 'A web application to help solve the age old question, "Where do you want to eat?"', 
+                description: 'Dinner Date is a web application that helps users decide where to eat. Users can create an account, friend others, and swipe on nearby restraunts. When a similar restaraunt is swiped on you will receive a match notifcation.',
+                tech: 'React, MongoDB, Express, Auth0, AWS Amplify',
+                github: 'https://github.com/Hcran18/Dinner-Date',
+                image: dinnerdate
+        },
+        { id: 3, 
+                title: 'Tweeter', 
+                subtitle: 'Twitter Clone App', 
+                short: 'A Twitter clone for android that allows users to post, follow, see their feed, and more.', 
+                description: 'Tweeter is a Twitter clone I built for android as part of a course project. Users can view other users profiles, follow them, see their posts, and make posts of their own for their friends to see in their feeds.',
+                tech: 'Java, Android Studio, AWS S3, AWS API Gateway, AWS Lambda, AWS DynamoDB, AWS SQS',
+                github: 'https://github.com/Hcran18/tweeterAWS',
+                image: tweeter
+        },
+        // Add more projects as needed
+        ];
 
-  return (
-    <div className='ProjectsPage'>
-        <h1>Get in Touch</h1>
-        <div className="grid-container">
-            {items.map((item) => (
-                <motion.div
-                whileHover={{ scale: 1.1 }}
-                key={item.id}
-                layoutId={item.id}
-                className="card"
-                onClick={() => setSelectedId(item.id)}
-                >
-                <motion.h5>{item.subtitle}</motion.h5>
-                <motion.h2>{item.title}</motion.h2>
-                <motion.p>{item.short}</motion.p>
-                </motion.div>
-            ))}
-
-            <AnimatePresence>
-                {selectedId && (
-                <motion.div
-                    key="expanded"
-                    layoutId={selectedId}
-                    className="expanded-card"
-                    onClick={() => setSelectedId(null)}
-                >
-                    <motion.h5>{items.find((item) => item.id === selectedId)?.subtitle}</motion.h5>
-                    <motion.h2>{items.find((item) => item.id === selectedId)?.title}</motion.h2>
-                    <motion.p>{items.find((item) => item.id === selectedId)?.description}</motion.p>
-                    <motion.button className='button' onClick={() => setSelectedId(null)}>Close</motion.button>
-                </motion.div>
-                )}
-            </AnimatePresence>
-        </div>
-    </div>
-  );
+        return (
+                <div className="project-page">
+                <h1>Projects</h1>
+                <div className="cards-container">
+                        {items.map((item) => (
+                        <motion.div layoutId={item.id} onClick={() => setSelectedID(item.id)}
+                        whileHover={{ scale: 1.1 }}
+                        >
+                        <ProjectCard project={item} />
+                        </motion.div>
+                        ))}
+                </div>
+                <AnimatePresence>
+                        {selectedID && (
+                        <motion.div
+                        className="expanded-cards-container"
+                        layoutId={selectedID}
+                        >
+                        <ExpandedProjectCard
+                        project={items.find((item) => item.id === selectedID)}
+                        onClose={handleClose}
+                        />
+                        </motion.div>
+                        )}
+                </AnimatePresence>
+                </div>
+        );
 };
 
 export default Projects;

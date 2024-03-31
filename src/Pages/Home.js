@@ -14,14 +14,15 @@ function Home() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1 }}
-                >
+                >   
                     <h3 className='text'>Hello, my name is</h3>
                     <NavLink className='main' to='/about'>
                         <motion.h1 
                             className='text main'
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ duration: 1, delay: 0.3 }}
+                            whileHover={{ scale: 1.1 }}
+                            transition={{ opacity: { duration: 1, delay: 0.3 } }}
                         >
                             Hunter Crandall.
                         </motion.h1>

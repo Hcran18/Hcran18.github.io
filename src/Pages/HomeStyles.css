@@ -29,7 +29,7 @@
 }
 
 .main {
-    transition: all 0.15s ease-in-out;
+    /* transition: all 0.15s ease-in-out; */
     text-decoration: none;
 }
 
@@ -55,7 +55,7 @@
         background-color: #00dfb3;
         color: #222;
         box-shadow: 0 5px 15px 0 rgba( 0, 0, 0, 0.25 );
-        transform: translate(-5px, -5px);
+        /* transform: translate(-5px, -5px); */
     }
 }
 
