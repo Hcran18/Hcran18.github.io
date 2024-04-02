@@ -49,29 +49,38 @@ const Projects = () => {
 
         return (
                 <div className="project-page">
-                <h1>Projects</h1>
-                <div className="cards-container">
-                        {items.map((item) => (
-                        <motion.div layoutId={item.id} onClick={() => setSelectedID(item.id)}
-                        whileHover={{ scale: 1.1 }}
-                        >
-                        <ProjectCard project={item} />
-                        </motion.div>
-                        ))}
-                </div>
-                <AnimatePresence>
-                        {selectedID && (
-                        <motion.div
-                        className="expanded-cards-container"
-                        layoutId={selectedID}
-                        >
-                        <ExpandedProjectCard
-                        project={items.find((item) => item.id === selectedID)}
-                        onClose={handleClose}
-                        />
-                        </motion.div>
-                        )}
-                </AnimatePresence>
+                        <motion.h1 initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.3}} >Projects</motion.h1>
+                        <div className="cards-container">
+                                {items.map((item) => (
+                                        <motion.div
+                                                key={item.id}
+                                                layoutId={item.id}
+                                                onClick={() => setSelectedID(item.id)}
+                                                initial={{ opacity: 0 }}
+                                                animate={{ opacity: 1 }}
+                                                transition={{ opacity: {delay: (item.id * .3) , duration: 0.3} }}
+                                        >
+                                                <ProjectCard project={item} />
+                                        </motion.div>
+                                ))}
+                        </div>
+                        <AnimatePresence>
+                                {selectedID && (
+                                        <motion.div
+                                                className="expanded-cards-container"
+                                                layoutId={selectedID}
+                                                initial={{ opacity: 0 }}
+                                                animate={{ opacity: 1 }}
+                                                exit={{ opacity: 0 }}
+                                                transition={{ duration: 0.3 }}
+                                        >
+                                                <ExpandedProjectCard
+                                                        project={items.find((item) => item.id === selectedID)}
+                                                        onClose={handleClose}
+                                                />
+                                        </motion.div>
+                                )}
+                        </AnimatePresence>
                 </div>
         );
 };

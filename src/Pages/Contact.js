@@ -67,12 +67,9 @@ const Contact = () => {
                     {showSuccessMessage && <div className='success-message'>Form submitted successfully!</div>}
                     <motion.div
                     className='form'
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.6}}
                     >
                     <form ref={form} className='form' onSubmit={handleSubmit}>
-                        <div className='form-group'>
+                        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.6, duration: 1}} className='form-group'>
                             <label htmlFor="name">Name:</label>
                             <input
                                 type="text"
@@ -81,8 +78,8 @@ const Contact = () => {
                                 onChange={(e) => setName(e.target.value)}
                                 name='user_name'
                             />
-                        </div>
-                        <div className='form-group'>
+                        </motion.div>
+                        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.9, duration: 1}} className='form-group'>
                             <label htmlFor="email">Email:</label>
                             <input
                                 type="email"
@@ -91,8 +88,8 @@ const Contact = () => {
                                 onChange={(e) => setEmail(e.target.value)}
                                 name='user_email'
                             />
-                        </div>
-                        <div className='form-group'>
+                        </motion.div>
+                        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 1.2, duration: 1}} className='form-group'>
                             <label htmlFor="message">Message:</label>
                             <textarea
                                 id="message"
@@ -100,10 +97,13 @@ const Contact = () => {
                                 onChange={(e) => setMessage(e.target.value)}
                                 name='message'
                             />
-                        </div>
+                        </motion.div>
                         <motion.button 
                         whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }} 
+                        whileTap={{ scale: 0.9 }}
+                        initial={{opacity: 0}} 
+                        animate={{opacity: 1}} 
+                        transition={{ opacity: {delay: 1.5, duration: 1}}}
                         className='button' type='submit'>Submit</motion.button>
                     </form>
                     </motion.div>
