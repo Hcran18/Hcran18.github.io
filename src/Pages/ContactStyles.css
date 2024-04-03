@@ -88,3 +88,17 @@ button[type="submit"] {
     color: #00dfb3;
     margin-top: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .ContactPage h1 {
+        font-size: 8vw;
+    }
+
+    .ContactPage h2 {
+        font-size: 4vw;
+    }
+
+    .form {
+        width: 90%;
+    }
+}

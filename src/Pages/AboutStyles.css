@@ -71,3 +71,15 @@
     color: #00dfb3;
     font-weight: bold;
 }
+
+@media screen and (max-width: 910px) {
+    .about-image {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .about-image {
+        margin-right: 0;
+    }
+}

@@ -9,6 +9,7 @@ const ProjectCard = ({ project, onClick }) => {
         <h2>{project.title}</h2>
         <h3>{project.subtitle}</h3>
         <p>{project.short}</p>
+        <p className='read-more'>Read More...</p>
       </div>
     </motion.div>
   );
