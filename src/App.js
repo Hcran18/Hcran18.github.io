@@ -11,6 +11,7 @@ import Home from "./Pages/Home";
 import Experience from "./Pages/Experience";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
+import About from "./Pages/About";
 import './App.css';
 
 function App() {
@@ -33,6 +34,7 @@ function AppContent() {
       <Navbar />
       <Routes className='Pages'>
         <Route index path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />

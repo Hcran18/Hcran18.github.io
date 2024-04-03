@@ -1,0 +1,73 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 120px;
+}
+
+.about-container h1 {
+    font-size: 6vw;
+    font-weight: bold;
+    color: #00dfb3;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.about-image {
+    margin-right: 20px;
+    border: 2px solid #00dfb3; /* Apply border directly to the image */
+    position: relative;
+    height: 373px;
+    width: 250px;
+}
+
+.about-image img {
+    width: 100%; /* Ensure image fills its container */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    filter: grayscale(100%); /* Apply grayscale filter directly to the image */
+    object-fit: cover;
+    transition: all 0.3s ease-in-out; /* Add transition effect to filter property */
+}
+
+.about-image:hover img {
+    filter: grayscale(0); /* Remove grayscale filter on hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-text {
+    max-width: 600px;
+    color: #fff;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.text-break {
+    margin-bottom: 20px;
+    border-color: #00dfb3;
+}
+
+.intro {
+    color: #00dfb3;
+    font-weight: bold;
+}
