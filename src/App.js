@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import ReactGA from 'react-ga4';
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,6 +15,8 @@ import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import './App.css';
 
+ReactGA.send('pageview');
+
 function App() {
   return (
     <Router>
@@ -27,7 +30,9 @@ function AppContent() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [location.pathname]);
+    ReactGA.initialize('G-NB0KBRJ0XQ');
+    ReactGA.send('pageview', location.pathname);
+  }, [location]);
   
   return (
     <>

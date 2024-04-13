@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga4';
 import { NavLink } from 'react-router-dom';
 import './NavbarStyles.css';
 import logo from '../Pages/Images/h-logo/png/logo-no-background.png';
@@ -6,8 +7,14 @@ import logo from '../Pages/Images/h-logo/png/logo-no-background.png';
 class Navbar extends Component {
     state = { clicked: false }
 
-    handleClick = () => {
+    handleClick = (label) => {
         this.setState({ clicked: !this.state.clicked })
+
+        ReactGA.event({
+            category: 'Navbar',
+            action: 'Click',
+            label: label,
+        });
     }
 
     render() {
@@ -16,26 +23,26 @@ class Navbar extends Component {
                 <NavLink to='/'>
                     <img src={logo} alt='logo' className='logo' />
                 </NavLink>
-                <div className='menu-icon' onClick={this.handleClick}>
+                <div className='menu-icon' onClick={() => this.handleClick('Menu Icon')}>
                     <i className={
                         this.state.clicked ? 
                         "fas fa-times" : "fas fa-bars"}></i>
                 </div>
                 <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
                     <li>
-                        <NavLink className='nav-links' exact="true" to="/" onClick={this.handleClick}>Home</NavLink>
+                        <NavLink className='nav-links' exact="true" to="/" onClick={() => this.handleClick('Home')}>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink className='nav-links' to="/about" onClick={this.handleClick}>About</NavLink>
+                        <NavLink className='nav-links' to="/about" onClick={() => this.handleClick('About')}>About</NavLink>
                     </li>
                     <li>
-                        <NavLink className='nav-links' to="/experience" onClick={this.handleClick}>Experience</NavLink>
+                        <NavLink className='nav-links' to="/experience" onClick={() => this.handleClick('Experience')}>Experience</NavLink>
                     </li>
                     <li>
-                        <NavLink className='nav-links' to="/projects" onClick={this.handleClick}>Projects</NavLink>
+                        <NavLink className='nav-links' to="/projects" onClick={() => this.handleClick('Projects')}>Projects</NavLink>
                     </li>
                     <li>
-                        <NavLink className='nav-links contact' to="/contact" onClick={this.handleClick}>Contact</NavLink>
+                        <NavLink className='nav-links contact' to="/contact" onClick={() => this.handleClick('Contact')}>Contact</NavLink>
                     </li>
                 </ul>
             </nav>
