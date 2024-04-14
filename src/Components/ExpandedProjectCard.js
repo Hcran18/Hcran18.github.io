@@ -14,11 +14,10 @@ const ExpandedProjectCard = ({ project, onClose }) => {
           <img src={project.image} alt={project.title} />
         </div>
         <div className="project-info">
-          {/* <h2>{project.title}</h2>
-          <h3>{project.subtitle}</h3> */}
           <p>{project.description}</p>
           <p><strong>Technologies Used:</strong> {project.tech}</p>
-          <a href={project.github}><i className="social fa-brands fa-github"></i></a>
+          <a href={project.github} target="_blank" rel="noopener noreferrer"><i className="social fa-brands fa-github"></i></a>
+          {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer"><i class="link fa-solid fa-link"></i></a>}
         </div>
       </div>
     </motion.div>

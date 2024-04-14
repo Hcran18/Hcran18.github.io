@@ -17,26 +17,26 @@
 }
 
 .title {
-    font-size: 5vw;
+    font-size: 5dvw;
     font-weight: bold;
     color: #222; /* Change the title color to white */
 }
 
 .company {
-    font-size: 2vw;
+    font-size: 2dvw;
     font-weight: bold; /* Make the company name bold */
     color: #fff; /* Change the color of the company name to white */
 }
 
 .location {
-    font-size: 1.5vw;
+    font-size: 1.5dvw;
     color: #fff; /* Change the color of the location to white */
     margin-bottom: 10px; /* Add margin to create space below the location */
     font-style: italic; /* Make the location text italic */
 }
 
 .descriptions {
-    font-size: 1.5vw;
+    font-size: 1.5dvw;
     padding: 15px;
     color: #222;
     list-style-type: none; /* Remove the default bullet */
@@ -63,19 +63,19 @@
     }
 
     .title {
-        font-size: 6vw;
+        font-size: 6dvw;
     }
     
     .company {
-        font-size: 3vw;
+        font-size: 5dvw;
     }
     
     .location {
-        font-size: 2.5vw;
+        font-size: 4dvw;
     }
     
     .descriptions {
-        font-size: 2.5vw;
+        font-size: 4dvw;
     }
 }
 
@@ -85,9 +85,9 @@
         display: inline-block;
         width: 0;
         height: 0;
-        border-top: 3.3px solid transparent;
-        border-bottom: 3.3px solid transparent;
-        border-left: 3.3px solid #00dfb3; /* Change the color to match your design */
+        border-top: 3.5px solid transparent;
+        border-bottom: 3.5px solid transparent;
+        border-left: 3.5px solid #00dfb3; /* Change the color to match your design */
         margin-right: 8px; /* Adjust the spacing as needed */
     }
 }

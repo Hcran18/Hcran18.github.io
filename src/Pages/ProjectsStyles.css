@@ -125,6 +125,17 @@
     text-decoration: none;
     margin-right: 10px;
 }
+
+.expanded-project-card .link {
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.expanded-project-card .link:hover {
+    transform: translate(-2px, -5px);
+    color: #00dfb3;
+}
   
 .close {
     padding: 10px 10px;

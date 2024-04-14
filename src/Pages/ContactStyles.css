@@ -8,7 +8,7 @@
 }
 
 .ContactPage h1 {
-    font-size: 6vw;
+    font-size: 6dvw;
     font-weight: bold;
     color: #00dfb3;
     padding: 10px;
@@ -17,7 +17,7 @@
 }
 
 .ContactPage h2 {
-    font-size: 2vw;
+    font-size: 2dvw;
     font-weight: bold;
     color: #fff;
     padding: 10px;
@@ -91,11 +91,11 @@ button[type="submit"] {
 
 @media screen and (max-width: 768px) {
     .ContactPage h1 {
-        font-size: 8vw;
+        font-size: 8dvw;
     }
 
     .ContactPage h2 {
-        font-size: 4vw;
+        font-size: 4dvw;
     }
 
     .form {
