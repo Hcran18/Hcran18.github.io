@@ -1,5 +1,6 @@
 import React from 'react';
 import PricingCard from '../Components/PricingCard';
+import { motion } from 'framer-motion';
 import './PricingStyles.css';
 
 const Pricing = () => {
@@ -15,13 +16,43 @@ const Pricing = () => {
 
     return (
         <div className='pricing'>
-            <h1>Pricing</h1>
+            <motion.h1 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+            >
+                Pricing
+            </motion.h1>
             <div className="pricing-container">
                 <div className="pricing-grid">
-                    <PricingCard planName={'Starter Website'} description={card1description} price={'$80'} features={card1features} />
-                    <PricingCard planName={'Professional Web Solution'} description={card2description} price={'$350'} features={card2features} />
-                    <PricingCard planName={'Custom Tailored Web Experience'} description={card3description} price={'$550'} features={card3features} />
-                    <PricingCard planName={'Add-Ons'} description={addonsDescription} price={''} features={addonsFeatures} />
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 0.3 }}
+                    >
+                        <PricingCard planName={'Starter Website'} description={card1description} price={'$80'} features={card1features} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 0.6 }}
+                    >
+                        <PricingCard planName={'Professional Web Solution'} description={card2description} price={'$350'} features={card2features} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 0.9 }}
+                    >
+                        <PricingCard planName={'Custom Tailored Web Experience'} description={card3description} price={'$550'} features={card3features} />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 1.2 }}
+                    >
+                        <PricingCard planName={'Add-Ons'} description={addonsDescription} price={''} features={addonsFeatures} />
+                    </motion.div>
                 </div>
             </div>
         </div>

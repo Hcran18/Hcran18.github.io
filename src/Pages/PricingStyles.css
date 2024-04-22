@@ -29,6 +29,10 @@
     gap: 20px;
 }
 
+.pricing-grid > div {
+    height: 100%; /* Set a fixed height for each PricingCard container */
+}
+
 .pricing-grid > :nth-child(4) {
     grid-column: 1 / 4; /* Span across all three columns */
     justify-self: center; /* Center horizontally within the grid container */
