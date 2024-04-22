@@ -42,6 +42,9 @@ class Navbar extends Component {
                         <NavLink className='nav-links' to="/projects" onClick={() => this.handleClick('Projects')}>Projects</NavLink>
                     </li>
                     <li>
+                        <NavLink className='nav-links' to="/pricing" onClick={() => this.handleClick('Pricing')}>Pricing</NavLink>
+                    </li>
+                    <li>
                         <NavLink className='nav-links contact' to="/contact" onClick={() => this.handleClick('Contact')}>Contact</NavLink>
                     </li>
                 </ul>

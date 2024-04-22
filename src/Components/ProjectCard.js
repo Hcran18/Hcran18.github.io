@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const ProjectCard = ({ project, onClick }) => {
   return (
-    <motion.div whileHover={{ scale: 1.1 }} onClick={onClick} className="project-card">
+    <motion.div whileHover={{ scale: 1.1}} transition={{ duration: 0.3 }} onClick={onClick} className="project-card">
       <img src={project.image} alt={project.title} />
       <div className="project-info">
         <h2>{project.title}</h2>

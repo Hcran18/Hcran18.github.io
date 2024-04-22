@@ -13,6 +13,7 @@ import Experience from "./Pages/Experience";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
+import Pricing from "./Pages/Pricing";
 import './App.css';
 
 ReactGA.send('pageview');
@@ -42,6 +43,7 @@ function AppContent() {
         <Route path="/about" element={<About />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer className='footer' />

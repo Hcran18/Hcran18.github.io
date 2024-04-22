@@ -1,0 +1,61 @@
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 120px;
+}
+
+.pricing h1 {
+    font-size: 6vw;
+    font-weight: bold;
+    color: #00dfb3;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pricing-grid > :nth-child(4) {
+    grid-column: 1 / 4; /* Span across all three columns */
+    justify-self: center; /* Center horizontally within the grid container */
+    width: 90%; /* Adjust width as needed */
+    max-width: 650px; /* Set maximum width if necessary */
+}
+
+/* Additional styling for PricingCard components if needed */
+
+/* Media Queries */
+@media screen and (max-width: 950px) {
+    .pricing h1 {
+        font-size: 8vw; /* Adjust font size for smaller screens */
+    }
+
+    .pricing-container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr; /* Change to single column layout for smaller screens */
+    }
+
+    .pricing-grid > :nth-child(4) {
+        grid-column: auto; /* Reset grid-column property */
+        justify-self: auto; /* Reset justify-self property */
+        width: 100%; /* Reset width property */
+        max-width: none; /* Reset max-width property */
+    }
+}
