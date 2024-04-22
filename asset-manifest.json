@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.35dfec48.css",
-    "main.js": "/static/js/main.8db5ff99.js",
+    "main.css": "/static/css/main.a9b51a63.css",
+    "main.js": "/static/js/main.09055ce6.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/HunterPhoto.jpg": "/static/media/HunterPhoto.481b4e0e0d7a1b645560.jpg",
     "static/media/huntercrandall.com.png": "/static/media/huntercrandall.com.ef77f200ae62bd19f91d.png",
@@ -9,12 +9,12 @@
     "static/media/DinnerDate.png": "/static/media/DinnerDate.2c79664dfec95807344f.png",
     "static/media/logo-no-background.png": "/static/media/logo-no-background.aa3f99d102e2041a084e.png",
     "index.html": "/index.html",
-    "main.35dfec48.css.map": "/static/css/main.35dfec48.css.map",
-    "main.8db5ff99.js.map": "/static/js/main.8db5ff99.js.map",
+    "main.a9b51a63.css.map": "/static/css/main.a9b51a63.css.map",
+    "main.09055ce6.js.map": "/static/js/main.09055ce6.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35dfec48.css",
-    "static/js/main.8db5ff99.js"
+    "static/css/main.a9b51a63.css",
+    "static/js/main.09055ce6.js"
   ]
 }
