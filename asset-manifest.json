@@ -1,20 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.c6018fd1.css",
-    "main.js": "/static/js/main.93192293.js",
+    "main.js": "/static/js/main.fb8864ab.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/ArtsBuildingConstruction.png": "/static/media/ArtsBuildingConstruction.6468b4fd30d92f2ad3f4.png",
     "static/media/HunterPhoto.jpg": "/static/media/HunterPhoto.481b4e0e0d7a1b645560.jpg",
-    "static/media/huntercrandall.com.png": "/static/media/huntercrandall.com.ef77f200ae62bd19f91d.png",
-    "static/media/tweeter.png": "/static/media/tweeter.4f36ca815382a3f06a16.png",
-    "static/media/DinnerDate.png": "/static/media/DinnerDate.2c79664dfec95807344f.png",
+    "static/media/huntercrandall.com.png": "/static/media/huntercrandall.com.1269a449e8b4eb75bad0.png",
+    "static/media/tweeter.png": "/static/media/tweeter.c6504ef2f73f89d045d6.png",
+    "static/media/SQLGPT.png": "/static/media/SQLGPT.98b50db2ca1bf53c7975.png",
+    "static/media/DinnerDate.png": "/static/media/DinnerDate.7cfe86333642bf3d1c10.png",
     "static/media/logo-no-background.png": "/static/media/logo-no-background.aa3f99d102e2041a084e.png",
     "index.html": "/index.html",
     "main.c6018fd1.css.map": "/static/css/main.c6018fd1.css.map",
-    "main.93192293.js.map": "/static/js/main.93192293.js.map",
+    "main.fb8864ab.js.map": "/static/js/main.fb8864ab.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6018fd1.css",
-    "static/js/main.93192293.js"
+    "static/js/main.fb8864ab.js"
   ]
 }
