@@ -16,7 +16,7 @@ const ExpandedProjectCard = ({ project, onClose }) => {
         <div className="project-info">
           <p>{project.description}</p>
           <p><strong>Technologies Used:</strong> {project.tech}</p>
-          <a href={project.github} target="_blank" rel="noopener noreferrer"><i className="social fa-brands fa-github"></i></a>
+          {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer"><i className="social fa-brands fa-github"></i></a>}
           {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer"><i class="link fa-solid fa-link"></i></a>}
         </div>
       </div>

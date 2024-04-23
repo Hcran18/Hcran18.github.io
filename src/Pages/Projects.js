@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import ProjectCard from '../Components/ProjectCard';
 import { motion, AnimatePresence } from 'framer-motion';
 import ExpandedProjectCard from '../Components/ExpandedProjectCard';
+import ArtsBuildingConstruction from './Images/projects/ArtsBuildingConstruction.png';
 import huntercrandallcom from './Images/projects/huntercrandall.com.png'
 import dinnerdate from './Images/projects/DinnerDate.png';
 import tweeter from './Images/projects/tweeter.png';
+import sqlgpt from './Images/projects/SQLGPT.png';
 
 import './ProjectsStyles.css';
 
@@ -17,7 +19,17 @@ const Projects = () => {
 
   // Define the items array containing project data
         const items = [
-        { id: 1, 
+        { id: 1,
+                title: 'Arts Building Construction',
+                subtitle: 'New BYU Arts Building Website',
+                short: 'A website for the new BYU Arts Building construction project.',
+                description: 'The BYU Arts Building is currently under construction. This website was created to provide information about the project to the public. The website includes information about the project, a live webcam, time-lapse videos, and pictures with the progress of the project.',
+                tech: 'Brightspot CMS, HTML, CSS, Google Analytics',
+                github: null,
+                link: 'https://cfac.byu.edu/arts-building',
+                image: ArtsBuildingConstruction
+        },
+        { id: 2, 
                 title: 'huntercrandall.com', 
                 subtitle: 'Portfolio Website', 
                 short: 'My personal portfolio website showcasing my projects and experience.', 
@@ -27,7 +39,7 @@ const Projects = () => {
                 link: 'https://huntercrandall.com',
                 image: huntercrandallcom
         },
-        { id: 2, 
+        { id: 3, 
                 title: 'Dinner Date', 
                 subtitle: 'Current Project', 
                 short: 'A web application to help solve the age old question, "Where do you want to eat?"', 
@@ -37,7 +49,17 @@ const Projects = () => {
                 link: null,
                 image: dinnerdate
         },
-        { id: 3, 
+        { id: 4,
+                title: 'SQLGPT', 
+                subtitle: 'AI Database Query Generator', 
+                short: 'A application that uses GPT-3 to generate answers about a database based on user input.', 
+                description: 'SQLGPT is an application that uses GPT-3 to generate answers about a database based on user input. Users can ask questions about a database and SQLGPT will use the provided schema to generate a SQL query. The query is then run on the database and the results returned to GPT-3 to generate a response. The response is then returned to the user.',
+                tech: 'GPT-3, MySQL, Java',
+                github: 'https://github.com/Hcran18/SQLGPT',
+                link: null,
+                image: sqlgpt
+        },
+        { id: 5, 
                 title: 'Tweeter', 
                 subtitle: 'Twitter Clone App', 
                 short: 'A Twitter clone for android that allows users to post, follow, see their feed, and more.', 
