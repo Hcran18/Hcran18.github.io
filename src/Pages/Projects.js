@@ -7,6 +7,7 @@ import huntercrandallcom from './Images/projects/huntercrandall.com.png'
 import dinnerdate from './Images/projects/DinnerDate.png';
 import tweeter from './Images/projects/tweeter.png';
 import sqlgpt from './Images/projects/SQLGPT.png';
+import emmaolsonphoto from './Images/projects/emmaolsonphoto.com.png';
 
 import './ProjectsStyles.css';
 
@@ -20,6 +21,16 @@ const Projects = () => {
   // Define the items array containing project data
         const items = [
         { id: 1,
+                title: 'Emma Olson Photo',
+                subtitle: 'Photography Website',
+                short: 'A website for a professional photographer to showcase her work.',
+                description: 'Emma Olson is a professional photographer. This website was created to showcase her work. The website includes a gallery of her photos, information about her, and her contact information for potential clients to reach out to her.',
+                tech: 'React, TypeScript, TailwindCSS, Framer Motion',
+                github: null,
+                link: 'https://emmaolsonphoto.com',
+                image: emmaolsonphoto
+        },
+        { id: 2,
                 title: 'Arts Building Construction',
                 subtitle: 'New BYU Arts Building Website',
                 short: 'A website for the new BYU Arts Building construction project.',
@@ -29,7 +40,7 @@ const Projects = () => {
                 link: 'https://cfac.byu.edu/arts-building',
                 image: ArtsBuildingConstruction
         },
-        { id: 2, 
+        { id: 3, 
                 title: 'huntercrandall.com', 
                 subtitle: 'Portfolio Website', 
                 short: 'My personal portfolio website showcasing my projects and experience.', 
@@ -39,7 +50,7 @@ const Projects = () => {
                 link: 'https://huntercrandall.com',
                 image: huntercrandallcom
         },
-        { id: 3, 
+        { id: 4, 
                 title: 'Dinner Date', 
                 subtitle: 'Current Project', 
                 short: 'A web application to help solve the age old question, "Where do you want to eat?"', 
@@ -49,7 +60,7 @@ const Projects = () => {
                 link: null,
                 image: dinnerdate
         },
-        { id: 4,
+        { id: 5,
                 title: 'SQLGPT', 
                 subtitle: 'AI Database Query Generator', 
                 short: 'A application that uses GPT-3 to generate answers about a database based on user input.', 
@@ -59,7 +70,7 @@ const Projects = () => {
                 link: null,
                 image: sqlgpt
         },
-        { id: 5, 
+        { id: 6, 
                 title: 'Tweeter', 
                 subtitle: 'Twitter Clone App', 
                 short: 'A Twitter clone for android that allows users to post, follow, see their feed, and more.', 
