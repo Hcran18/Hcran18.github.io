@@ -5,10 +5,10 @@ import './ExperienceStyles.css';
 
 function Experience() {
     const webDescription = [
-        'Maintain multiple websites for 8 departments in the College of Fine Arts and Communications',
-        'Develop multiple websites to meet semesterly project deadlines',
-        'Design solutions as a team in weekly meetings to assist departments with their website requests',
-        'Monitor and report monthly analytics using Google Analytics for the college dean'
+        'Rebuilt the website from the ground up using HTML, CSS, and JavaScript, improving the design and user experience',
+        'Developed the highest-viewed webpage for the college, achieving an average engagement time of over 10 minutes and increasing page views by 62%',
+        'Streamlined the website\'s tagging system, reducing tags by 65%, enhancing search functionality and backend organization',
+        'Utilized Python to create an automated data analysis script, saving the team 5 hours per month and improving efficiency by 80%'
     ];
 
     const pathwayDescription = [ 
