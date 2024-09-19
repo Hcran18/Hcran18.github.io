@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.c6018fd1.css",
-    "main.js": "/static/js/main.29d437f4.js",
+    "main.css": "/static/css/main.577ac06d.css",
+    "main.js": "/static/js/main.12f7d0fa.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/ArtsBuildingConstruction.png": "/static/media/ArtsBuildingConstruction.6468b4fd30d92f2ad3f4.png",
     "static/media/emmaolsonphoto.com.png": "/static/media/emmaolsonphoto.com.ee171ab16a8c557392d1.png",
+    "static/media/cfac.png": "/static/media/cfac.4b1812d5ba96b5c83526.png",
+    "static/media/jwtPizza.png": "/static/media/jwtPizza.318ecfd3d6cf312511c2.png",
     "static/media/HunterPhoto.jpg": "/static/media/HunterPhoto.481b4e0e0d7a1b645560.jpg",
     "static/media/huntercrandall.com.png": "/static/media/huntercrandall.com.1269a449e8b4eb75bad0.png",
     "static/media/tweeter.png": "/static/media/tweeter.c6504ef2f73f89d045d6.png",
+    "static/media/choreChart.png": "/static/media/choreChart.e99121ed8cc47211ba55.png",
     "static/media/SQLGPT.png": "/static/media/SQLGPT.98b50db2ca1bf53c7975.png",
     "static/media/DinnerDate.png": "/static/media/DinnerDate.7cfe86333642bf3d1c10.png",
     "static/media/logo-no-background.png": "/static/media/logo-no-background.aa3f99d102e2041a084e.png",
     "index.html": "/index.html",
-    "main.c6018fd1.css.map": "/static/css/main.c6018fd1.css.map",
-    "main.29d437f4.js.map": "/static/js/main.29d437f4.js.map",
+    "main.577ac06d.css.map": "/static/css/main.577ac06d.css.map",
+    "main.12f7d0fa.js.map": "/static/js/main.12f7d0fa.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6018fd1.css",
-    "static/js/main.29d437f4.js"
+    "static/css/main.577ac06d.css",
+    "static/js/main.12f7d0fa.js"
   ]
 }
