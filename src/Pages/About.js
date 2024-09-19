@@ -13,15 +13,13 @@ const About = () => {
                 </motion.div>
                 <div className="about-text">
                     <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ opacity: {duration: 1, delay: .6 }}}>
-                        <span className='intro'>Hi, I'm Hunter.</span> Currently, I'm a senior at Brigham Young University pursuing a degree in Computer Science. 
-                        I'm particularly interested in full-stack development, 
-                        and I enjoy working on both the front-end and back-end aspects of web applications.
+                        <span className='intro'>Hi, I'm Hunter!</span> a senior majoring in Computer Science at Brigham Young University, specializing in back-end development. 
                     </motion.p>
                     <motion.hr className='text-break' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ opacity: {duration: 1, delay: .6 }}}/>
                     <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ opacity: {duration: 1, delay: .9 }}}>
-                        <span className='intro'>I excel</span> in a wide array of technologies and languages, from React and AWS to 
+                        <span className='intro'>I'm proficient</span> in a wide array of technologies and languages, from React and AWS to 
                         SQL, Java, Python, JavaScript, HTML, and CSS. 
-                        My commitment to ongoing learning keeps me attuned to the latest tech trends, 
+                        My commitment to lifelong learning keeps me attuned to the latest tech trends, 
                         ensuring I'm always equipped with the latest tools and techniques.
                     </motion.p>
                     <motion.hr className='text-break' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ opacity: {duration: 1, delay: .9 }}}/>
