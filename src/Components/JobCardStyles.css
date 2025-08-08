@@ -57,6 +57,10 @@
     border-left-color: #222; /* Change the color of the bullet points to black on scroll */
 }
 
+.description {
+    padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 850px) {
     .job-card {
         width: 90%;
