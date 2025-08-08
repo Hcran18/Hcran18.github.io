@@ -4,13 +4,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ExpandedProjectCard from '../Components/ExpandedProjectCard';
 import ArtsBuildingConstruction from './Images/projects/ArtsBuildingConstruction.png';
 import huntercrandallcom from './Images/projects/huntercrandall.com.png'
-import dinnerdate from './Images/projects/DinnerDate.png';
-import tweeter from './Images/projects/tweeter.png';
 import sqlgpt from './Images/projects/SQLGPT.png';
 import emmaolsonphoto from './Images/projects/emmaolsonphoto.com.png';
 import cfac from './Images/projects/cfac.png'
-import chorechart from './Images/projects/choreChart.png'
-import jwtPizza from './Images/projects/jwtPizza.png'
+import backlogger from './Images/projects/backlogger.png';
 
 import './ProjectsStyles.css';
 
@@ -24,14 +21,14 @@ const Projects = () => {
   // Define the items array containing project data
         const items = [
         { id: 1,
-                title: 'Chore Chart',
+                title: 'Backlogger',
                 subtitle: 'Personal Project',
-                short: 'An application allowing parents to set chores and rewards for their children to earn points and earn rewards',
-                description: 'Developed a RESTful API using FastAPI and Python for users to track children’s chores and earn points. Designed a MySQL database to manage user information, to-dos, points, and purchasable items. Utilized Docker to containerize the back-end, creating a scalable and isolated deployment environment.',
-                tech: 'React, Python, FastAPI, MySQL, Docker',
-                github: 'https://github.com/Hcran18/Chore-Chart',
-                link: null,
-                image: chorechart
+                short: 'Backlog Optimizer is a web-based application designed to help users organize and prioritize their game backlog',
+                description: 'Backlog Optimizer is a web-based application designed to help users organize and prioritize their game backlog. With an intelligent optimization algorithm, the app streamlines game prioritization based on various factors such as score, price, and completion time. Future features like account creation, wishlisting, and calendar scheduling will make managing your gaming experience more seamless and enjoyable.',
+                tech: 'React, TypeScript, Python, FastAPI, Docker, Netlify, Render',
+                github: 'https://github.com/Hcran18/backlogOptimizer',
+                link: 'https://gamingbacklogger.netlify.app/',
+                image: backlogger
         },
         { id: 2,
                 title:'Homepage and Navigation',
@@ -44,16 +41,6 @@ const Projects = () => {
                 image: cfac
         },
         { id: 3,
-                title:'JWT Pizza',
-                subtitle:'QA and DevOps Course Project',
-                short:'Automated deployments, scalability, and testing of a given application',
-                description:'Automated frontend and backend deployments of a given application using GitHub Actions and AWS services. Implemented testing frameworks such as Jest for backend unit tests and Playwright for UI testing, achieving over 80% test coverage and integrating with CI/CD pipelines',
-                tech:'React, GitHub Actions, AWS, Jest',
-                github:'https://github.com/Hcran18/jwt-pizza',
-                link: 'https://pizza.huntercrandall.com/',
-                image: jwtPizza
-        },
-        { id: 4,
                 title: 'Emma Olson Photo',
                 subtitle: 'Photography Website',
                 short: 'A website for a professional photographer to showcase her work.',
@@ -63,7 +50,7 @@ const Projects = () => {
                 link: 'https://emmaolsonphoto.com',
                 image: emmaolsonphoto
         },
-        { id: 5,
+        { id: 4,
                 title: 'Arts Building Construction',
                 subtitle: 'New BYU Arts Building Website',
                 short: 'A website for the new BYU Arts Building construction project.',
@@ -73,7 +60,7 @@ const Projects = () => {
                 link: 'https://cfac.byu.edu/arts-building',
                 image: ArtsBuildingConstruction
         },
-        { id: 6, 
+        { id: 5, 
                 title: 'huntercrandall.com', 
                 subtitle: 'Portfolio Website', 
                 short: 'My personal portfolio website showcasing my projects and experience.', 
@@ -83,17 +70,7 @@ const Projects = () => {
                 link: 'https://huntercrandall.com',
                 image: huntercrandallcom
         },
-        { id: 7, 
-                title: 'Dinner Date', 
-                subtitle: 'Current Project', 
-                short: 'A web application to help solve the age old question, "Where do you want to eat?"', 
-                description: 'Dinner Date is a web application that helps users decide where to eat. Users can create an account, friend others, and swipe on nearby restraunts. When a similar restaraunt is swiped on you will receive a match notifcation.',
-                tech: 'React, MongoDB, Express, Auth0, AWS Amplify',
-                github: 'https://github.com/Hcran18/Dinner-Date',
-                link: null,
-                image: dinnerdate
-        },
-        { id: 8,
+        { id: 6,
                 title: 'SQLGPT', 
                 subtitle: 'AI Database Query Generator', 
                 short: 'A application that uses GPT-3 to generate answers about a database based on user input.', 
@@ -102,16 +79,6 @@ const Projects = () => {
                 github: 'https://github.com/Hcran18/SQLGPT',
                 link: null,
                 image: sqlgpt
-        },
-        { id: 9, 
-                title: 'Tweeter', 
-                subtitle: 'Twitter Clone App', 
-                short: 'A Twitter clone for android that allows users to post, follow, see their feed, and more.', 
-                description: 'Tweeter is a Twitter clone I built for android as part of a course project. Users can view other users profiles, follow them, see their posts, and make posts of their own for their friends to see in their feeds.',
-                tech: 'Java, Android Studio, AWS S3, AWS API Gateway, AWS Lambda, AWS DynamoDB, AWS SQS',
-                github: 'https://github.com/Hcran18/tweeterAWS',
-                link: null,
-                image: tweeter
         },
         // Add more projects as needed
         ];
