@@ -13,18 +13,19 @@ const About = () => {
                 </motion.div>
                 <div className="about-text">
                     <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ opacity: {duration: 1, delay: .6 }}}>
-                        <span className='intro'>Hi, I'm Hunter!</span> a senior majoring in Computer Science at Brigham Young University, specializing in back-end development. 
+                        <span className='intro'>Hi, I'm Hunter!</span> I'm a passionate software developer and recent Computer Science graduate from Brigham Young University.
                     </motion.p>
                     <motion.hr className='text-break' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ opacity: {duration: 1, delay: .6 }}}/>
                     <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ opacity: {duration: 1, delay: .9 }}}>
-                        <span className='intro'>I'm proficient</span> in a wide array of technologies and languages, from React and AWS to 
-                        SQL, Java, Python, JavaScript, HTML, and CSS. 
-                        My commitment to lifelong learning keeps me attuned to the latest tech trends, 
-                        ensuring I'm always equipped with the latest tools and techniques.
+                        <span className='intro'>I'm skilled</span> in a diverse range of technologies and programming languages. 
+                        With two years of hands-on professional experience, 
+                        I specialize in React, AWS, JavaScript, Python, and Go. 
+                        My passion for continuous learning keeps me ahead of emerging tech trends, 
+                        ensuring I deliver innovative solutions with cutting-edge tools and techniques.
                     </motion.p>
                     <motion.hr className='text-break' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ opacity: {duration: 1, delay: .9 }}}/>
                     <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ opacity: {duration: 1, delay: 1.2 }}}>
-                        <span className='intro'>Delivering tailored solutions,</span> I craft efficient web applications that drive results. 
+                        <span className='intro'>Delivering tailored solutions,</span> I craft web applications that drive results. 
                         With a focus on innovation and staying current with industry trends, 
                         I ensure your project stands out in today's digital landscape.
                     </motion.p>
